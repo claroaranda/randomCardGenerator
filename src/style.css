@@ -1,1 +1,94 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --theme-color: #179b0b;
+}
+
+body {
+  background-color: var(--theme-color);
+}
+
+.container {
+  width: 90%;
+  max-width: 20em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.card {
+  width: 100%;
+  height: 400px;
+  background-color: #ffffff;
+  box-shadow: 3px 5px 20px #312f2f;
+  text-align: center;
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardNumber h1 {
+  font-size: 8em;
+  font-weight: 600;
+}
+
+.topSuit {
+  height: 20%;
+  width: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bottomSuit {
+  height: 20%;
+  width: 20%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  rotate: z 180deg;
+}
+
+.topSuit h1,
+.bottomSuit h1 {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.generateCard {
+  display: block;
+  font-size: 1em;
+  width: 80%;
+  margin: 2em auto 0 auto;
+  padding: 1em 0;
+  border-radius: 0.5em;
+  border: none;
+  outline: mome;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #0f12dfb9;
+  cursor: pointer;
+}
+
+.buttons {
+  width: 80%;
+  padding: 0;
+  margin: 0 auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#start,
+#stop {
+  width: 50%;
+  padding: 5px;
+  margin: 5px auto;
+}
